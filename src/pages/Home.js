@@ -5,7 +5,7 @@ import Hero from "../components/Hero/Hero";
 import Movies from "../components/Movies/Movies";
 import { updateMovies } from "../features/moviesSlice/moviesSlice";
 
-function Home({}) {
+function Home() {
     const dispatch = useDispatch();
     const moviesLocal = useSelector((store) => store.movies.moviesLocal);
 

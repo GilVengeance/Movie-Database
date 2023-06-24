@@ -10,8 +10,7 @@ import { addMovie } from "../../features/moviesSlice/moviesSlice";
 // Menangkap props
 function AddMovieForm() {
     const dispatch = useDispatch();
-
-    const Navigate =  useNavigate();
+    const navigate =  useNavigate();
 
     const [formData, setFormData] = useState({
         title: "",
@@ -80,7 +79,7 @@ function AddMovieForm() {
 
         dispatch(addMovie(movie));
 
-        Navigate("/");
+        navigate("/");
     }
 
     function handleSubmit(e) {

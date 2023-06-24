@@ -9,7 +9,7 @@ const moviesSlice = createSlice({
     },
     reducers: {
         addMovie(state, action) {
-            state.movies.push(action.payload);
+            state.moviesLocal.push(action.payload);
         },
         // Membuat reducer updateMovies
         updateMovies(state, action) {
